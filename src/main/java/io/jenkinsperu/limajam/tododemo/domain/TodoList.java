@@ -25,4 +25,8 @@ public class TodoList {
     public int getSize() {
         return list.size();
     }
+
+    public List<Task> getList() {
+        return list;
+    }
 }
