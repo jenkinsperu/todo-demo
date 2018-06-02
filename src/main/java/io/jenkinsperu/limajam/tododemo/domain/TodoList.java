@@ -1,10 +1,11 @@
 package io.jenkinsperu.limajam.tododemo.domain;
 
-import io.jenkinsperu.limajam.tododemo.domain.Task;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class TodoList {
 
     private List<Task> list;

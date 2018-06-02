@@ -1,13 +1,17 @@
 package io.jenkinsperu.limajam.tododemo.domain;
 
+
 import java.util.Objects;
+
 
 public class Task {
 
 
     private boolean done;
 
+
     private String text;
+
 
     public Task(String text) {
 
@@ -24,9 +28,17 @@ public class Task {
         return done;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
+
+    public void setDone(boolean done) {
+        this.done = done;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     @Override
@@ -42,5 +54,10 @@ public class Task {
     public int hashCode() {
 
         return Objects.hash(done, text);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

@@ -1,0 +1,28 @@
+    <!DOCTYPE HTML>
+        <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        </head>
+        <body>
+
+        <form action="greeting">
+                <fieldset>
+                        <input type="text" name="texto" />
+                        <input type="submit" value="Agregar" />
+                </fieldset>
+        </form>
+
+        <table>
+                <tr>
+                        <th>texto</th>
+                        <th>done</th>
+                </tr>
+                <tr th:each="task : ${tasks}">
+                        <td th:text="${task.text}"></td>
+                        <td th:text="${task.done}"></td>
+                </tr>
+        </table>
+
+        </body>
+        </html>
